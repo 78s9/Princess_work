@@ -5,7 +5,7 @@
             "type": "Adb"
         }
     ],
-    "resource": [
+    "resource": [git
         {
             "name": "官服",
             "path": [
