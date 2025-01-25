@@ -1,0 +1,192 @@
+{
+    "start-1": {
+        "recognition": "OCR",
+        "expected": "商店",
+        "action": "Click",
+        "post_delay": 1500,
+        "next": [
+            "clear base"
+        ]
+    },
+    "clear base": {
+        "recognition": "FeatureMatch",
+        "template": "dixiacheng.jpg",
+        "action": "Click",
+        "next": [
+            "up"
+        ]
+    },
+    "up": {
+        "action": "Click",
+        "target": [
+            521,
+            196,
+            33,
+            32
+        ],
+        "next": [
+            "up1"
+        ]
+    },
+    "up1": {
+        "action": "Click",
+        "target": [
+            733,
+            196,
+            33,
+            32
+        ],
+        "next": [
+            "up2"
+        ]
+    },
+    "up2": {
+        "action": "Click",
+        "target": [
+            945,
+            196,
+            33,
+            32
+        ],
+        "next": [
+            "up3"
+        ]
+    },
+    "up3": {
+        "action": "Click",
+        "target": [
+            1157,
+            196,
+            33,
+            32
+        ],
+        "next": [
+            "to"
+        ]
+    },
+    "to": {
+        "action": "Click",
+        "target": [
+            521,
+            536,
+            28,
+            20
+        ],
+        "next": [
+            "to1"
+        ]
+    },
+    "to1": {
+        "action": "Click",
+        "target": [
+            733,
+            536,
+            28,
+            20
+        ],
+        "next": [
+            "to2"
+        ]
+    },
+    "to2": {
+        "action": "Click",
+        "target": [
+            945,
+            536,
+            28,
+            20
+        ],
+        "next": [
+            "to3"
+        ]
+    },
+    "to3": {
+        "action": "Click",
+        "target": [
+            1157,
+            536,
+            28,
+            20
+        ],
+        "next": [
+            "purchase in underground city"
+        ]
+    },
+    "purchase in underground city": {
+        "action": "Click",
+        "target": [
+            1157,
+            580,
+            28,
+            20
+        ],
+        "next": [
+            "确认1 in dxc"
+        ]
+    },
+    "确认1 in dxc": {
+        "recognition": "OCR",
+        "expected": "确认",
+        "action": "Click",
+        "roi": [
+            754,
+            620,
+            62,
+            37
+        ],
+        "post_delay": 2000,
+        "next": [
+            "确认2 in dxc"
+        ]
+    },
+    "确认2 in dxc": {
+        "recognition": "OCR",
+        "expected": "确认",
+        "action": "Click",
+        "post_delay": 2000,
+        "next": [
+            "Change schema"
+        ]
+    },
+    "Change schema": {
+        "action": "Click",
+        "target": [
+            466,
+            83,
+            60,
+            24
+        ],
+        "next": [
+            "Back underground city"
+        ]
+    },
+    "Back underground city": {
+        "recognition": "FeatureMatch",
+        "template": "dixiacheng.jpg",
+        "action": "Click"
+    },
+    "Click reset": {
+        "action": "Click",
+        "target": [
+            690,
+            574,
+            80,
+            22
+        ],
+        "next": [
+            "确认3 in dxc"
+        ]
+    },
+    "确认3 in dxc": {
+        "recognition": "OCR",
+        "expected": "确认",
+        "roi": [
+            757,
+            476,
+            60,
+            36
+        ],
+        "action": "Click",
+        "post_delay": 2000
+    }
+}
