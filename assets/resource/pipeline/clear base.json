@@ -163,7 +163,142 @@
     "Back underground city": {
         "recognition": "FeatureMatch",
         "template": "dixiacheng.jpg",
-        "action": "Click"
+        "action": "Click",
+        "next":[
+            "2-up"
+        ]
+    },
+    "2-up": {
+        "action": "Click",
+        "target": [
+            521,
+            196,
+            33,
+            32
+        ],
+        "next": [
+            "2-up1"
+        ]
+    },
+    "2-up1": {
+        "action": "Click",
+        "target": [
+            733,
+            196,
+            33,
+            32
+        ],
+        "next": [
+            "2-up2"
+        ]
+    },
+    "2-up2": {
+        "action": "Click",
+        "target": [
+            945,
+            196,
+            33,
+            32
+        ],
+        "next": [
+            "2-up3"
+        ]
+    },
+    "2-up3": {
+        "action": "Click",
+        "target": [
+            1157,
+            196,
+            33,
+            32
+        ],
+        "next": [
+            "2-to"
+        ]
+    },
+    "2-to": {
+        "action": "Click",
+        "target": [
+            521,
+            536,
+            28,
+            20
+        ],
+        "next": [
+            "2-to1"
+        ]
+    },
+    "2-to1": {
+        "action": "Click",
+        "target": [
+            733,
+            536,
+            28,
+            20
+        ],
+        "next": [
+            "2-to2"
+        ]
+    },
+    "2-to2": {
+        "action": "Click",
+        "target": [
+            945,
+            536,
+            28,
+            20
+        ],
+        "next": [
+            "2-to3"
+        ]
+    },
+    "2-to3": {
+        "action": "Click",
+        "target": [
+            1157,
+            536,
+            28,
+            20
+        ],
+        "next": [
+            "2-purchase in underground city"
+        ]
+    },
+    "2-purchase in underground city": {
+        "action": "Click",
+        "target": [
+            1157,
+            580,
+            28,
+            20
+        ],
+        "next": [
+            "确认3 in dxc"
+        ]
+    },
+    "确认3 in dxc": {
+        "recognition": "OCR",
+        "expected": "确认",
+        "action": "Click",
+        "roi": [
+            754,
+            620,
+            62,
+            37
+        ],
+        "post_delay": 2000,
+        "next": [
+            "确认4 in dxc"
+        ]
+    },
+    "确认4 in dxc": {
+        "recognition": "OCR",
+        "expected": "确认",
+        "action": "Click",
+        "post_delay": 2000,
+        "next": [
+            "Click reset"
+        ]
     },
     "Click reset": {
         "action": "Click",
@@ -174,10 +309,10 @@
             22
         ],
         "next": [
-            "确认3 in dxc"
+            "确认5 in dxc"
         ]
     },
-    "确认3 in dxc": {
+    "确认5 in dxc": {
         "recognition": "OCR",
         "expected": "确认",
         "roi": [
