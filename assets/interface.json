@@ -23,6 +23,10 @@
             "entry": "Daily"
         },
         {
+            "name": "日常清理2",
+            "entry": "start-1"
+        },
+        {
             "name": "选项任务",
             "entry": "MyTask2",
             "option": [
