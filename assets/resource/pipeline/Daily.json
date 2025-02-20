@@ -27,7 +27,7 @@
     },
     "一键启动": {
         "recognition": "OCR",
-        "expected": "自动",
+        "expected": "启动",
         "action": "Click",
         "post_delay": 4000,
         "next": [
